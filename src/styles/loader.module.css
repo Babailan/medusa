@@ -1,0 +1,48 @@
+.container {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 2em;
+  background-color: #121212;
+  z-index: 3;
+}
+.random {
+  font-size: 1em;
+  opacity: 1;
+  animation-name: random;
+  color: rgb(255, 255, 255);
+}
+.remove {
+  animation-name: remove;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes remove {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 500px) {
+  .random {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .random {
+    font-size: 3em;
+  }
+}
