@@ -1,3 +1,5 @@
+@use "../../styles/colors";
+
 .container {
   position: fixed;
   width: 100vw;
@@ -10,21 +12,19 @@
   align-items: center;
   height: 100vh;
   font-size: 2em;
-  background-color: #121212;
+  background-color: colors.$primary-color;
   z-index: 3;
 }
 .random {
   font-size: 1em;
   opacity: 1;
   animation-name: random;
-  color: rgb(255, 255, 255);
 }
 .remove {
   animation-name: remove;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
-
 @keyframes remove {
   0% {
     opacity: 1;
@@ -32,6 +32,7 @@
 
   100% {
     opacity: 0;
+    visibility: hidden;
   }
 }
 

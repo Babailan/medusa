@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export const sizeChange = (ref: any) => {
+export const resize = () => {
   const [width, setWidth] = useState(() =>
     typeof window !== "undefined" ? window.innerWidth : 0
   );
@@ -10,18 +10,10 @@ export const sizeChange = (ref: any) => {
   };
 
   useEffect(() => {
-    const observer = new IntersectionObserver(([events]) => {
-      handleResize();
-      console.log(events);
-    });
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
     window.addEventListener("resize", handleResize);
 
     () => window.removeEventListener("resize", handleResize);
-  }, [width, ref.current]);
+  }, [width]);
 
   return width;
 };

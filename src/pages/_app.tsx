@@ -1,15 +1,12 @@
-import "../styles/globals.css";
-import "../styles/baseStyle.css";
-import type { AppProps } from "next/app";
-import Layout from "../components/Layout";
+import "../styles/globals.scss";
+import "locomotive-scroll/dist/locomotive-scroll.css";
+import Layout from "../components/Layout/Layout";
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }) {
   return (
-    <>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </>
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   );
 }
 

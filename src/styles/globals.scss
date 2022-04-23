@@ -1,3 +1,5 @@
+@use "./colors";
+
 html,
 body {
   padding: 0;
@@ -16,5 +18,8 @@ a {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  color: rgb(255, 255, 255);
+  color: colors.$font-color;
+}
+.c-scrollbar_thumb {
+  background-color: colors.$font-color !important;
 }

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from "../styles/loader.module.css";
+import styles from "./Loader.module.scss";
 
 function Loader() {
   let [random, setRandom] = useState<undefined | string>(undefined);

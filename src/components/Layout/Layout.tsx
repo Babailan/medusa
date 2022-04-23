@@ -1,15 +1,15 @@
-import { ReactChild, useRef } from "react";
+import { ReactChild, ReactNode, useRef } from "react";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
-import { sizeChange } from "../hooks/sizeChange";
-import Loader from "./Loader";
+import { resize } from "../../hooks/sizeChange";
+import Loader from "../Loader/Loader";
 
 type Props = {
-  children?: ReactChild | JSX.Element;
+  children?: ReactChild | JSX.Element | ReactNode;
 };
 
 function Layout({ children }: Props) {
   const containerRef = useRef(null);
-  const size = sizeChange(containerRef);
+  const size = resize();
   return (
     <LocomotiveScrollProvider
       options={{
@@ -20,6 +20,7 @@ function Layout({ children }: Props) {
     >
       <main data-scroll-container ref={containerRef}>
         {children}
+        {<Loader />}
       </main>
     </LocomotiveScrollProvider>
   );
