@@ -1,7 +1,7 @@
 import { ReactChild, ReactNode, useRef } from "react";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { resize } from "../../hooks/sizeChange";
-import Loader from "../Loader/Loader";
+import Loader from "../Loader/Index";
 
 type Props = {
   children?: ReactChild | JSX.Element | ReactNode;
@@ -14,6 +14,7 @@ function Layout({ children }: Props) {
     <LocomotiveScrollProvider
       options={{
         smooth: true,
+        lerp: 0.1,
       }}
       watch={[size]}
       containerRef={containerRef}

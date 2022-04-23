@@ -13,13 +13,13 @@ const Home: NextPage = () => {
         <p data-scroll>RONG</p>
       </div>
       <div
-        style={{ minHeight: "100vh", backgroundColor: "#121212" }}
+        style={{ minHeight: "100vh", backgroundColor: "#808080" }}
         data-scroll-section
+        className="container"
       >
-        <p data-scroll>RONG</p>
-        <p data-scroll>RONG</p>
-        <p data-scroll>RONG</p>
-        <p data-scroll>RONG</p>
+        <h1 data-scroll-sticky data-scroll data-scroll-target={".container"}>
+          RONG
+        </h1>
       </div>
       <div
         style={{ minHeight: "100vh", backgroundColor: "#121212" }}

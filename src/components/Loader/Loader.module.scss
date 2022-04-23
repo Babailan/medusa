@@ -21,9 +21,8 @@
   animation-name: random;
 }
 .remove {
-  animation-name: remove;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  opacity: 1;
+  animation: remove 1s both;
 }
 @keyframes remove {
   0% {
