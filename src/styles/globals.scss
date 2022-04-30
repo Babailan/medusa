@@ -4,7 +4,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: #121212;
+  background-color: #e9e9e9;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -22,4 +22,7 @@ a {
 }
 .c-scrollbar_thumb {
   background-color: colors.$font-color !important;
+}
+div[data-scroll-section] {
+  min-height: 100vh;
 }

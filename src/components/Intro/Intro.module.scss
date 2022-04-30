@@ -1,0 +1,30 @@
+@use "../../styles/colors";
+
+.container {
+  height: 100vh;
+  position: relative;
+  .image {
+    position: absolute;
+    background: url(../../images/medusa-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  .nameContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: flex-end;
+    .name {
+      color: colors.$font-color;
+      font-size: 5vw;
+      font-family: colors.$font-family-text;
+      width: fit-content;
+      height: fit-content;
+      background-color: #c1c1c1;
+    }
+  }
+}

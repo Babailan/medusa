@@ -1,35 +1,11 @@
 import type { NextPage } from "next";
+import { Intro } from "../components/Intro/Intro";
 
 const Home: NextPage = () => {
   return (
     <>
-      <div
-        style={{ minHeight: "100vh", backgroundColor: "#121212" }}
-        data-scroll-section
-      >
-        <p data-scroll>RONG</p>
-        <p data-scroll>RONG</p>
-        <p data-scroll>RONG</p>
-        <p data-scroll>RONG</p>
-      </div>
-      <div
-        style={{ minHeight: "100vh", backgroundColor: "#808080" }}
-        data-scroll-section
-        className="container"
-      >
-        <h1 data-scroll-sticky data-scroll data-scroll-target={".container"}>
-          RONG
-        </h1>
-      </div>
-      <div
-        style={{ minHeight: "100vh", backgroundColor: "#121212" }}
-        data-scroll-section
-      >
-        <p data-scroll>RONG</p>
-        <p data-scroll>RONG</p>
-        <p data-scroll>RONG</p>
-        <p data-scroll>RONG</p>
-      </div>
+      <Intro />
+      <div data-scroll-section style={{ minHeight: "100vh" }}></div>
     </>
   );
 };

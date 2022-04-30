@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { useLocomotiveScroll } from "react-locomotive-scroll";
 import styles from "./Loader.module.scss";
 
 function Loader() {
+  const loco = useLocomotiveScroll();
   let [random, setRandom] = useState<undefined | string>(undefined);
   useEffect(() => {
     setRandom(randomString());

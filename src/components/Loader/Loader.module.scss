@@ -16,7 +16,8 @@
   z-index: 3;
 }
 .random {
-  font-size: 1em;
+  font-size: 15vw;
+  color: colors.$font-color;
   opacity: 1;
   animation-name: random;
 }
@@ -32,17 +33,5 @@
   100% {
     opacity: 0;
     visibility: hidden;
-  }
-}
-
-@media (min-width: 500px) {
-  .random {
-    font-size: 2em;
-  }
-}
-
-@media (min-width: 1000px) {
-  .random {
-    font-size: 3em;
   }
 }
