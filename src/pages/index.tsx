@@ -1,11 +1,14 @@
 import type { NextPage } from "next";
+import { About } from "../components/About/About";
 import { Intro } from "../components/Intro/Intro";
+import Pics from "../components/Pics/Index";
 
 const Home: NextPage = () => {
   return (
     <>
       <Intro />
-      <div data-scroll-section style={{ minHeight: "100vh" }}></div>
+      <About />
+      <Pics />
     </>
   );
 };

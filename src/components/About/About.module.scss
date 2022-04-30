@@ -1,0 +1,50 @@
+@use "../../styles/colors";
+
+.container {
+  margin-top: 20vh;
+  padding: 20px;
+  min-height: 100vh;
+  max-width: 2000px;
+  display: flex;
+  justify-content: space-around;
+  gap: 60px;
+  flex-direction: column;
+  .q {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .title {
+    font-size: 3em;
+    font-family: colors.$font-family-text;
+    color: #121212;
+    width: fit-content;
+    height: fit-content;
+  }
+  .summaryContainer {
+    font-family: colors.$font-family-text;
+    width: 50%;
+    max-width: 630px;
+    min-width: 400px;
+    margin-left: 10px;
+    font-family: colors.$font-family-text;
+    font-size: 3em;
+    > span {
+      display: inline-block;
+      margin-bottom: 10vh;
+      color: #121212;
+      text-transform: uppercase;
+    }
+  }
+
+  .summaryText1 {
+    content: "";
+  }
+  .summaryText2 {
+    content: "";
+  }
+  .summaryText3 {
+    content: "";
+  }
+}

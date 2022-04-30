@@ -1,33 +1,58 @@
 @use "../../styles/colors";
-
+//IntroMainContainer
 .container {
   min-height: 100vh;
   min-width: 100vw;
-  height: 100vh;
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  flex-direction: column;
   position: relative;
-
-  .fixedImage {
-    position: absolute;
-    height: inherit;
-    width: inherit;
-    background-image: url(../../images/medusa-wallpaper.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    z-index: -1;
+  //fixedWrapper
+  .fixed_wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    .fixed_target {
+      bottom: -100vh;
+    }
+    .fixed,
+    .fixed_target {
+      position: absolute;
+      top: -100vh;
+      right: 0;
+      left: 0;
+    }
+    .fixed {
+      background-image: url(../../images/medusa-wallpaper.jpg);
+      height: inherit;
+      width: inherit;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
-
+  //Medusa Name
+  .nameltr {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .namertl {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
   .name {
     color: colors.$primary-color;
-    font-size: 3em;
+    font-size: 4em;
     font-family: colors.$font-family-text;
     width: fit-content;
     height: fit-content;
-    background-color: #a3a3a3;
+    background-color: #404040;
     padding: 0 1em;
+    transform: rotateY(90deg);
   }
+  //Medusa Container
 }

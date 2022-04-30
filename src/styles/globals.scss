@@ -23,6 +23,9 @@ a {
 .c-scrollbar_thumb {
   background-color: colors.$font-color !important;
 }
-div[data-scroll-section] {
+section[data-scroll-section] {
   min-height: 100vh;
+}
+::selection {
+  background-color: #232323;
 }
