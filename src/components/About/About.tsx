@@ -9,7 +9,7 @@ function About() {
           data-scroll-target={`.${styles.summaryText1}`}
           className={styles.title}
         >
-          WHO'S IS MEDUSA?
+          WHO&apos;S IS MEDUSA?
         </h1>
         <div
           data-scroll
@@ -33,8 +33,8 @@ function About() {
             ABLE TO DEFEAT THE GORGON BY LOPPING OFF HER HEAD, WHICH HE WAS ABLE
             TO DO BY FIGHTING HER REFLECTION IN HIS HIGHLY POLISHED SHIELD. HE
             LATER USED HER HEAD AS A WEAPON TO TURN ENEMIES TO STONE. AN IMAGE
-            OF MEDUSA'S HEAD WAS PLACED ON ATHENA'S OWN ARMOR OR SHOWN ON HER
-            SHIELD.
+            OF MEDUSA&apos;S HEAD WAS PLACED ON ATHENA&apos;S OWN ARMOR OR SHOWN
+            ON HER SHIELD.
           </span>
         </div>
       </div>
