@@ -21,8 +21,8 @@ function Layout({ children }: Props) {
     >
       <main data-scroll-container ref={containerRef}>
         {children}
-        {<Loader />}
       </main>
+      {<Loader />}
     </LocomotiveScrollProvider>
   );
 }

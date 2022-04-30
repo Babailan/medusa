@@ -11,15 +11,11 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-size: 2em;
+  font-size: 20vw;
   background-color: colors.$primary-color;
   z-index: 3;
 }
-.random {
-  font-size: 1em;
-  opacity: 1;
-  animation-name: random;
-}
+
 .remove {
   opacity: 1;
   animation: remove 1s both;
