@@ -14,7 +14,6 @@ function Layout({ children }: Props) {
     <LocomotiveScrollProvider
       options={{
         smooth: true,
-        lerp: 0.1,
       }}
       watch={[size]}
       containerRef={containerRef}

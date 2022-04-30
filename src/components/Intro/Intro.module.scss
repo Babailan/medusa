@@ -1,0 +1,33 @@
+@use "../../styles/colors";
+
+.container {
+  min-height: 100vh;
+  min-width: 100vw;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+
+  .fixedImage {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    background-image: url(../../images/medusa-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: -1;
+  }
+
+  .name {
+    color: colors.$primary-color;
+    font-size: 3em;
+    font-family: colors.$font-family-text;
+    width: fit-content;
+    height: fit-content;
+    background-color: #a3a3a3;
+    padding: 0 1em;
+  }
+}

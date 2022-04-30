@@ -11,11 +11,16 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-size: 20vw;
+  font-size: 2em;
   background-color: colors.$primary-color;
   z-index: 3;
 }
-
+.random {
+  font-size: 15vw;
+  color: colors.$font-color;
+  opacity: 1;
+  animation-name: random;
+}
 .remove {
   opacity: 1;
   animation: remove 1s both;
@@ -28,17 +33,5 @@
   100% {
     opacity: 0;
     visibility: hidden;
-  }
-}
-
-@media (min-width: 500px) {
-  .random {
-    font-size: 2em;
-  }
-}
-
-@media (min-width: 1000px) {
-  .random {
-    font-size: 3em;
   }
 }
