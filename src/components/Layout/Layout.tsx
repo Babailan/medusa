@@ -31,10 +31,10 @@ function Layout({ children }: Props) {
       >
         <main data-scroll-container ref={containerRef}>
           {load ? children : null}
+          {load ? <Loader /> : null}
+          {size < 696 && load ? <Warn /> : null}
         </main>
       </LocomotiveScrollProvider>
-      {load ? <Loader /> : null}
-      {size < 696 && load ? <Warn /> : null}
       {load ? <Senpai /> : null}
     </>
   );
