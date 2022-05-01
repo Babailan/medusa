@@ -1,0 +1,11 @@
+@use "../../styles/colors";
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em;
+  .text {
+    font-size: 16vw;
+    font-family: colors.$font-family-text;
+  }
+}

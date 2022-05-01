@@ -2,6 +2,7 @@
   min-height: 100vh;
   margin-top: 50vh;
   display: flex;
+  gap: 5em;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
@@ -95,6 +96,50 @@
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
+    }
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .container {
+    .image1Wrapper {
+      .image1 {
+        background-image: url(../../images/medusa1.png);
+        background-color: #4e4e4e;
+        background-blend-mode: luminosity;
+        width: 300px;
+        top: -80vh;
+        height: inherit;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+    .image2Wrapper {
+      .image2 {
+        background-image: url(../../images/medusa2.jpg);
+        background-color: #4e4e4e;
+        background-blend-mode: luminosity;
+        width: 300px;
+        top: -80vh;
+        height: inherit;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+    .image3Wrapper {
+      .image3 {
+        background-image: url(../../images/medusa3.jpg);
+        background-color: #4e4e4e;
+        background-blend-mode: luminosity;
+        width: 300px;
+        top: -80vh;
+        height: inherit;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
     }
   }
 }

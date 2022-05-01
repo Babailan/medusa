@@ -9,6 +9,7 @@ function Pics() {
         <div
           data-scroll
           data-scroll-sticky
+          data-scroll-speed={6}
           data-scroll-target={`.${styles.image1Target}`}
           className={styles.image1}
         ></div>
@@ -18,6 +19,7 @@ function Pics() {
         <div
           data-scroll
           data-scroll-sticky
+          data-scroll-speed={6}
           data-scroll-target={`.${styles.image2Target}`}
           className={styles.image2}
         ></div>
@@ -27,6 +29,7 @@ function Pics() {
         <div
           data-scroll
           data-scroll-sticky
+          data-scroll-speed={6}
           data-scroll-target={`.${styles.image3Target}`}
           className={styles.image3}
         ></div>

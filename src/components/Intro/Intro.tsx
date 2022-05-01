@@ -17,7 +17,7 @@ function Intro() {
           data-scroll
           data-scroll-speed={-30}
           data-scroll-direction="horizontal"
-          data-scroll-delay={0.1}
+          data-scroll-delay={0.06}
           data-scroll-repeat
           className={styles.name}
         >
@@ -29,7 +29,7 @@ function Intro() {
           data-scroll
           data-scroll-speed={30}
           data-scroll-direction="horizontal"
-          data-scroll-delay={0.1}
+          data-scroll-delay={0.06}
           data-scroll-repeat
           className={styles.name}
         >

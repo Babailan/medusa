@@ -2,6 +2,7 @@ import { ReactChild, ReactNode, useEffect, useRef, useState } from "react";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { resize } from "../../hooks/sizeChange";
 import Loader from "../Loader/Index";
+import Senpai from "../SenpaiUwU/Index";
 import Warn from "../Warn/Index";
 
 type Props = {
@@ -16,23 +17,26 @@ function Layout({ children }: Props) {
     setLoad(true);
   }, []);
   return (
-    <LocomotiveScrollProvider
-      options={{
-        smooth: true,
-        getDirection: true,
-        lerp: 0.1,
-        mobile: { smooth: true, getDirection: true, breakpoint: 0 },
-        tablet: { smooth: true, getDirection: true, breakpoint: 0 },
-      }}
-      watch={[size]}
-      containerRef={containerRef}
-    >
-      <main data-scroll-container ref={containerRef}>
-        {load ? <Loader /> : null}
-        {size < 696 && load ? <Warn /> : null}
-        {load ? children : null}
-      </main>
-    </LocomotiveScrollProvider>
+    <>
+      <LocomotiveScrollProvider
+        options={{
+          smooth: true,
+          lerp: 0.1,
+          multiplier: 0.5,
+          mobile: { smooth: true, breakpoint: 0 },
+          tablet: { smooth: true, breakpoint: 0 },
+        }}
+        watch={[size]}
+        containerRef={containerRef}
+      >
+        <main data-scroll-container ref={containerRef}>
+          {load ? children : null}
+        </main>
+      </LocomotiveScrollProvider>
+      {load ? <Loader /> : null}
+      {size < 696 && load ? <Warn /> : null}
+      {load ? <Senpai /> : null}
+    </>
   );
 }
 

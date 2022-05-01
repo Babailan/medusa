@@ -1,0 +1,28 @@
+@use "../../styles/colors";
+.senpai {
+  position: fixed;
+  bottom: 60px;
+  left: -40px;
+  transform: rotateZ(90deg);
+  font-family: serif;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #005171;
+  font-size: 1.5em;
+  gap: 5px;
+  &:hover {
+    color: rgb(0, 154, 215);
+    .line {
+      background-color: rgb(0, 154, 215);
+    }
+  }
+}
+.line {
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  overflow: hidden;
+  background-color: #005171;
+}
