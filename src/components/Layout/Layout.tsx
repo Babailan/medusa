@@ -10,12 +10,11 @@ type Props = {
 };
 
 function Layout({ children }: Props) {
-  const [load, setLoad] = useState<boolean>(false);
+  const [load, setLoad] = useState(false);
   const containerRef = useRef(null);
-  const size = resize();
-  useEffect(() => {
-    setLoad(true);
-  }, []);
+  const size = resize(setLoad);
+
+
   return (
     <>
       <LocomotiveScrollProvider
@@ -29,13 +28,15 @@ function Layout({ children }: Props) {
         watch={[size]}
         containerRef={containerRef}
       >
-        <main data-scroll-container ref={containerRef}>
+        <div data-scroll-container ref={containerRef}>
           {load ? children : null}
           {load ? <Loader /> : null}
-          {size < 696 && load ? <Warn /> : null}
-        </main>
+
+          {size.width < size.height ? <Warn /> : null}
+
+
+        </div>
       </LocomotiveScrollProvider>
-      {load ? <Senpai /> : null}
     </>
   );
 }

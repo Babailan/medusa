@@ -1,3 +1,3 @@
-import { Warn } from "./Warn";
+import Warn from "./Warn";
 
 export default Warn;

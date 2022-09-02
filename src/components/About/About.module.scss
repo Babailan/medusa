@@ -9,6 +9,7 @@
   justify-content: space-around;
   gap: 60px;
   flex-direction: column;
+
   .q {
     width: 100%;
     display: flex;
@@ -16,21 +17,19 @@
   }
 
   .title {
-    font-size: 3em;
     font-family: colors.$font-family-text;
     color: #121212;
     width: 373px;
     height: fit-content;
   }
+
   .summaryContainer {
     font-family: colors.$font-family-text;
-    width: 50%;
-    max-width: 630px;
-    min-width: 400px;
+    max-width: 70%;
     margin-left: 10px;
     font-family: colors.$font-family-text;
-    font-size: 3em;
-    > span {
+
+    >span {
       display: inline-block;
       margin-bottom: 10vh;
       color: #121212;
@@ -41,10 +40,18 @@
   .summaryText1 {
     content: "";
   }
+
   .summaryText2 {
     content: "";
   }
+
   .summaryText3 {
     content: "";
+  }
+}
+
+@media (min-width:796px) {
+  .container {
+    font-size: 2em;
   }
 }
